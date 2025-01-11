@@ -1,0 +1,125 @@
+
+
+html, body {
+     height: 100%; 
+     margin: 0; 
+ }
+
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #f0f4ff;
+     color: #333;
+     display: flex; /* Use flexbox for body */
+     flex-direction: column; /* Stack content vertically */
+ }
+
+ header {
+     background-color: white;
+     color: white;
+     padding: 10px 20px; 
+     position: relative;
+     display: flex; 
+     align-items: center; 
+     justify-content: space-between; 
+ }
+
+ 
+
+ nav {
+     margin-left: 0px;
+ }
+
+ nav ol {
+     list-style-type: none;
+     padding: 0;
+     display: flex;
+ }
+
+ nav li {
+     margin: 0 10px;
+ }
+
+ nav a {
+     text-decoration: none;
+     color: rgb(10, 10, 155);
+     padding: 10px;
+     
+     border-radius: 5px;
+ }
+ nav a:click{
+     color:  #5b5ea6;
+
+ }
+
+ nav a:hover {
+     background-color: #5b5ea6;
+     color: #fff;
+ }
+ main {
+     flex: 1; /* Allow main to grow */
+     padding: 20px; /* Space inside main content */
+     text-align: left; /* Align text to the left */
+     background-color: #afafd4; /* Light blue background for main */
+     
+ }
+
+ h1 {
+     font-size: 10 px; 
+     font-weight: bold; /* Make it bold */
+     color: rgb(10, 10, 155); /* Use a bright color for contrast */
+     margin: 0;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+     letter-spacing: 0 px; /* Add spacing between letters */
+ }
+
+ main {
+     padding: 20px;
+     flex: 1; 
+     display: flex; 
+     flex-direction: column; 
+     background-color: #f0f4ff;
+ }
+
+ h2 {
+     margin: 20px 0; /* Space above and below */
+     color: rgb(10, 10, 155); /* Change color for headings */
+     margin-left: 100px;
+ }
+
+ ul {
+     list-style-type: none; /* Remove bullets */
+     padding: 0; /* Remove padding */
+ }
+
+ li {
+     margin: 20px 0; /* Space between items */
+     display: flex; /* Flex layout for icons and text */
+     align-items: center; /* Center icon and text */
+     justify-content: flex-start; /* Align items to the left */
+ }
+
+ li img {
+     width: 30px; /* Icon size */
+     height: 30px; /* Icon size */
+     margin-right: 10px;
+     margin-left: 300px; /* Space between icon and text */
+ }
+
+ footer {
+     background-color: rgb(10, 10, 155); /* Footer background color */
+     color: #ffffff; /* Footer text color */
+     text-align: center; /* Center text */
+     padding: 10px 30px; /* Footer padding */
+     display: flex; /* Use flexbox for layout */
+     justify-content: center; /* Center items */
+     align-items: center; /* Center items vertically */
+ }
+
+ footer p {
+     margin: 0; /* Remove default margin */
+     padding-right: 20px; 
+ }
+
+ footer a {
+     margin: 0 10px; /* Space between icons */
+ }

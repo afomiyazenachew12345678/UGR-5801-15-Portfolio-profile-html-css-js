@@ -1,0 +1,168 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4ff; /* Light background color */
+            color: #333; /* Dark text color */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: white; /* Darker shade for the header */
+            color: white;
+            padding: 10px 20px; /* Adjust padding */
+            position: relative;
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+            justify-content: space-between; /* Space between title and nav */
+        }
+        #menu-toggle {
+            background: none; /* Remove default background */
+            border: none; /* Remove border */
+            font-size: 2em; /* Large font size for the hamburger icon */
+            cursor: pointer; /* Pointer cursor */
+            margin-left: auto; /* Push to the right */
+        }
+
+        nav {
+            margin-top: 10px; /* Space above navigation */
+        }
+
+        nav ol {
+            list-style-type: none; /* Remove bullets */
+            padding: 0; /* Remove padding */
+            display: flex; /* Flexbox for horizontal layout */
+            justify-content: center; /* Center items */
+        }
+
+        nav li {
+            margin: 0 15px; /* Space between links */
+        }
+
+        nav a {
+            text-decoration: none; /* Remove underline */
+            color: rgb(10, 10, 155); /* Link color */
+            padding: 5px 10px; /* Padding for links */
+            border-radius: 5px; /* Rounded corners */
+            transition: background 0.3s, color 0.3s; /* Transition effects */
+        }
+
+        nav a:hover {
+            background-color: #5b5ea6; /* Hover background color */
+            color: white; /* White text on hover */
+        }
+
+        main {
+            flex: 1; /* Allow main to grow */
+            display: flex; /* Flexbox layout */
+            align-items: flex-start; /* Align items to the start */
+            padding: 20px; /* Space inside main */
+            text-align: left; /* Left align text */
+            flex-direction: column; /* Stack elements vertically */
+        }
+
+        h1 {
+            font-size: 2em; /* Adjust font size */
+            font-weight: bold; /* Make it bold */
+            color: rgb(10, 10, 155); /* Use a bright color for contrast */
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+        }
+
+        .container {
+            background-color: white; /* Background for containers */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Padding inside containers */
+            margin: 10px; /* Space between containers */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+            flex-basis: 30%; /* Basis for responsiveness */
+            width: 100%; /* Ensure full width */
+        }
+
+        ul {
+            list-style-type: none; /* Remove bullets from list */
+            padding: 0; /* Remove padding */
+        }
+
+        audio {
+            margin: 20px 0; /* Margin around media players */
+            width: 100%; /* Full width of container */
+        }
+        video{
+            width: 50 px;
+            margin-left: 50 px;
+        }
+
+        footer {
+            background-color: rgb(10, 10, 155); /* Footer background color */
+            color: #ffffff; /* Footer text color */
+            text-align: center; /* Center text */
+            padding: 10px 30px; /* Footer padding */
+            display: flex; /* Use flexbox for layout */
+            justify-content: center; /* Center items */
+            align-items: center; /* Center items vertically */
+        }
+
+        footer p {
+            margin: 0; /* Remove default margin */
+            padding-right: 20px; /* Space between paragraph and icons */
+        }
+
+        footer a {
+            margin: 0 10px; /* Space between icons */
+        }
+
+        footer img {
+            width: 30px; /* Icon size */
+            height: 30px; /* Icon size */
+            vertical-align: middle; /* Align icons vertically */
+        }
+        @media (max-width: 900px) {
+            nav {
+                display: flex; /* Show nav when toggled */
+                flex-direction: column; /* Stack items vertically */
+                align-items: flex-start; /* Align to the start */
+                background-color: white; /* Background color for the menu */
+                position: absolute; /* Position for dropdown effect */
+                top: 50px; /* Adjust based on header height */
+                left: 0; /* Align to the left */
+                width: 100%; /* Full width */
+                z-index: 1000; /* Ensure it overlays other content */
+            }
+        
+            nav.hidden {
+                display: none; /* Hide the nav when not active */
+            }
+        
+            nav.visible {
+                display: flex; /* Show the nav when active */
+            }
+        
+            nav ol {
+                list-style-type: none;
+                padding: 0;
+                margin: 0; /* Remove default margin */
+            }
+        
+            nav li {
+                margin: 10px 0; /* Margin for vertical spacing */
+            }
+        
+            nav a {
+                padding: 10px; /* Add padding for touch targets */
+            }
+        }
+        
+        /* Styles for desktop */
+        @media (min-width: 900px) {
+            nav {
+                display: flex; /* Display nav as flex on desktop */
+                flex-direction: row; /* Row layout */
+            }
+        
+            #menu-toggle {
+                display: none; /* Hide the hamburger icon on desktop */
+            }
+        }

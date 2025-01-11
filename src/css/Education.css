@@ -1,0 +1,112 @@
+
+html, body {
+    height: 100%; /* Ensure the body takes the full height */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set default font */
+    background-color: #f0f4ff; /* Light background color */
+    color: #333; /* Dark text color */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack content vertically */
+}
+
+header {
+    background-color: white; /* Darker shade for the header */
+    color: white;
+    padding: 10px 20px; /* Adjust padding */
+    position: relative;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between title and nav */
+}
+
+nav {
+    margin-left: 20px; /* Bring nav closer to the header */
+}
+
+nav ol {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Make the nav horizontal */
+}
+
+nav li {
+    margin: 0 10px; /* Adjust spacing between nav items */
+   
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(10, 10, 155);
+    padding: 10px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px; /* Rounded corners for links */
+}
+
+nav a:hover {
+    background-color: #5b5ea6; /* Highlight color on hover */
+    color: #fff; /* Ensure text remains white */
+}
+nav a:click{
+    color:#5b5ea6;
+}
+
+main {
+    padding: 20px; /* Space inside main content */
+    flex: 1; /* Allow main to grow */
+}
+h1 {
+    font-size: 10 px; /* Adjust font size */
+    font-weight: bold; /* Make it bold */
+    color: rgb(10, 10, 155); /* Use a bright color for contrast */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    letter-spacing: 0 px; /* Add spacing between letters */
+}
+
+
+h2 {
+    margin-top: 0; /* Remove top margin from heading */
+}
+
+table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* Merge borders */
+    margin-top: 20px; /* Space above table */
+}
+
+th, td {
+    padding: 10px; /* Space inside table cells */
+    border: 1px solid #ccc; /* Light border */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray background for header */
+}
+
+footer {
+    background-color: rgb(10, 10, 155); /* Dark background for footer */
+    color: #ffffff; /* White text */
+    text-align: center; /* Center align text */
+    padding: 10px 30px; /* Space inside footer */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the icons */
+    align-items: center; /* Center vertically */
+    margin-top: auto; /* Push footer to the bottom */
+}
+footer p {
+   margin: 0; /* Remove default margin */
+   padding-right: 20px;
+}
+
+footer a {
+    margin: 0 10px; /* Space between icons */
+}
+
+footer img {
+    width: 30px; /* Set icon size */
+    height: 30px; /* Set icon size */
+}
+ 
+
+       

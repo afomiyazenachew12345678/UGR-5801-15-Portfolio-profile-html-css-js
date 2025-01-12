@@ -1,0 +1,147 @@
+
+        
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4ff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full height */
+}
+
+header {
+    background-color: white; /* Background color for the header */
+    padding: 10px 20px; /* Adjust padding */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between title and nav */
+}
+
+nav {
+    position: relative; /* Needed for absolute positioning of dropdown */
+    margin-left: 20px; /* Bring nav closer to the header */
+}
+
+.menu-icon {
+    display: none; /* Hidden by default for desktop */
+    font-size: 2em; /* Adjust size for visibility */
+    color: #333; /* Ensure the color is visible */
+    cursor: pointer; /* Indicate it's clickable */
+    z-index: 1001;
+    cursor: pointer;
+} /* Ensure it stays above other elements */
+
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Horizontal layout for desktop */
+}
+
+.nav-list li {
+    margin: 0 10px; /* Space between nav items */
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: rgb(10, 10, 155);
+    padding: 10px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px; /* Rounded corners for links */
+}
+
+.nav-list a:hover {
+    background-color: #5b5ea6; /* Highlight color on hover */
+    color: #fff; /* Ensure text remains white */
+}
+
+/* Mobile and tablet view */
+@media (max-width: 480px) {
+    header h1 {
+      font-size: 1.2rem;
+    }
+
+    nav a {
+      font-size: 0.9rem;
+    }
+
+    .main-content h2 {
+      font-size: 1.2rem;
+    }
+
+    .main-content p {
+      font-size: 0.8rem;
+    }
+  }
+
+main {
+    display: flex; 
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between content and image */
+    padding: 20px;
+    flex-grow: 1; /* Allow main to grow and fill space */
+}
+
+.content {
+    max-width: 600px; /* Limit width of text content */
+    text-align: left; /* Align text to the left */
+}
+
+h1 {
+    font-size: 2em; /* Adjust font size */
+    font-weight: bold; /* Make it bold */
+    color: rgb(10, 10, 155); /* Use a bright color for contrast */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 5px; /* Reduce bottom margin */
+}
+
+img {
+    width: 150px; /* Set the width according to your design */
+    height: 150px; /* Set the height to make it circular */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    margin-left: 50px; /* Reduce space between text and image */
+}
+
+footer {
+    background-color: rgb(10, 10, 155); /* Footer background color */
+    color: #ffffff; /* Footer text color */
+    text-align: center; /* Center text */
+    padding: 10px 30px; /* Footer padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items */
+    align-items: center; /* Center items vertically */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    padding-right: 20px; /* Space between paragraph and icons */
+}
+
+footer a {
+    margin: 0 10px; /* Space between icons */
+}
+
+footer img {
+    width: 30px; /* Icon size */
+    height: 30px; /* Icon size */
+    vertical-align: middle; /* Align icons vertically */
+}

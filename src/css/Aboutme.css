@@ -1,0 +1,136 @@
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4ff;
+    color: #333;
+    display: flex; /* Use flexbox for body */
+    flex-direction: column; /* Stack content vertically */
+}
+
+header {
+    background-color: white; /* Darker shade for the header */
+    color: white;
+    padding: 10px 20px; /* Adjust padding */
+    position: relative;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between title and nav */
+}
+
+
+
+nav {
+    margin-left: 20px;
+}
+
+nav ol {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(10, 10, 155);
+    padding: 10px;
+    
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #5b5ea6;
+    color: #fff;
+}
+h1 {
+    font-size: 10 px; /* Adjust font size */
+    font-weight: bold; /* Make it bold */
+    color: rgb(10, 10, 155); /* Use a bright color for contrast */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    letter-spacing: 0 px; /* Add spacing between letters */
+}
+
+main {
+    padding: 20px;
+    flex: 1; /* Allow main to grow and push footer down */
+    display: flex; /* Use flexbox in main */
+    flex-direction: column; /* Stack content vertically */
+}
+
+.main-container {
+    display: flex; /* Use flexbox for layout */
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column; /* Stack intro text and image vertically */
+    align-items: flex-start; /* Align items to the start */
+    margin-right: 20px; /* Space between containers */
+    font-weight: bold;
+    margin-top: 80px;
+   
+}
+
+.intro-container p {
+    margin: 0 0 10px; /* Space below the paragraph */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column; /* Stack image above the second paragraph */
+    align-items: center; /* Center image */
+    margin-bottom: 20px; /* Space below the image */
+    margin-top: 30px;
+   margin-left: 30px;
+}
+
+.image-container img {
+    width: 300px;
+    height: 150px;
+     /* Circular image */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.second-paragraph-container {
+    max-width: 600px; /* Limit the width */
+    text-align: left;
+    font-weight: bold;
+    
+    margin-top: 150px;
+    margin-right: 70px;
+}
+
+footer {
+background-color: rgb(10, 10, 155); /* Footer background color */
+color: #ffffff; /* Footer text color */
+text-align: center; /* Center text */
+padding: 10px 30px; /* Footer padding */
+display: flex; /* Use flexbox for layout */
+justify-content: center; /* Center items */
+align-items: center; /* Center items vertically */
+}
+
+footer p {
+margin: 0; /* Remove default margin */
+padding-right: 20px; /* Space between paragraph and icons */
+}
+
+footer a {
+margin: 0 10px; /* Space between icons */
+}
+
+footer img {
+width: 30px; /* Icon size */
+height: 30px; /* Icon size */
+vertical-align: middle; /* Align icons vertically */
+}
